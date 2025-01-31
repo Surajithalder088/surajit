@@ -3,7 +3,7 @@ import Services from './components/services/Services'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 
-
+let a=0;
 const App = () => {
   return (
     <div className='container'>
