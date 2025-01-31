@@ -1,0 +1,303 @@
+.hero{
+    
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.hImg{
+    position: absolute;
+   
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 80%;
+    width: max-content;
+
+}
+.hImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.degree{
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+    
+}
+.certificate{
+    background-color: antiquewhite;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    
+}
+.certificate-logo{
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+}
+.certificateText{
+    font-size: 12px;
+   margin: 16px 0;
+    text-align: center;
+    width: 60%;
+}
+.hSection{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hTitle{
+    margin-top: 50px;
+    font-size: 60px;
+    color: pink;
+}
+.hTitle span{
+    color: white;
+}
+
+.awards{
+    width: 40%;
+}
+.awards h2{
+    font-size:20px ;
+}
+.awards p{
+    font-size: 14px;
+    color: #ddd;
+    margin: 16px 0;
+}
+.awardList{
+    display: flex;
+    gap: 8px;
+}
+.awardList img{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background:white;
+    border-radius: 100%;
+}
+.scroll{
+    margin-bottom: 50px;
+    width: max-content;
+}
+
+.hSection.right{
+    align-items: end;
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background-color: #2f204e;
+    border-bottom-right-radius:25px ;
+}
+.follow img{
+    width: 15px;
+    height: 15px;
+}
+.followTextContainer{
+    width: 20px;
+    height: 20px;
+}
+.followText{
+    background-color: #dd4c62;
+    font-size: 12px;
+    rotate: 90deg;
+    width: max-content;
+    height: 100%;
+    transform-origin: left top;
+    transform: translateY(-20px);
+    padding: 0 8px;
+    border-bottom-right-radius:20px ;
+}
+.bubbleContainer{
+    width: 50%;
+    display: flex;
+    align-items: end;
+    gap: 8px;
+    justify-content: space-between;
+}
+.bubble{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    padding: 24px;
+    font-size: 15px;
+    border-radius: 30px 30px  0  30px ;
+}
+.bubbleContainer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    object-fit: cover;
+    background: #000;
+}
+
+.contactLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #dd4c62;
+
+}
+.contactButton img{
+    height: 45px;
+    width: 45px;
+}
+
+
+@media(max-width:1536px){
+    .hTitle{
+        font-size: 72px;
+    }
+}
+@media(max-width:1110px){
+    .bg{
+        height: 60%;
+        top: auto;
+        bottom: 0;
+    }
+    .hImg{
+        height: 100%;
+    }
+    .awards{
+        width: 60%;
+    }
+    .bubbleContainer{
+        width: 100%;
+    }
+}
+@media(max-width:950px){
+    .hTitle{
+        font-size: 50px;
+    }
+    .bg{
+        height: 50%;
+        top: auto;
+        bottom: 0;
+    }
+    .hImg{
+        height: 100%;
+    }
+    .awards{
+        width: 40%;
+        
+    }
+    .awards h2{
+        font-size:16px ;
+    }
+    .awards p{
+        font-size: 10px;
+    }
+    .bubbleContainer{
+        width: 100%;
+    }
+}
+
+@media(max-width:720px){
+    .hTitle{
+        font-size: 50px;
+    }
+    .bg{
+        height: 50%;
+        top: auto;
+        bottom: 0;
+    }
+    .hImg{
+        height: 100%;
+    }
+    .awards{
+        width: 40%;
+        
+    }
+    .awards h2{
+        font-size:16px ;
+    }
+    .awards p{
+        font-size: 10px;
+    }
+    .bubbleContainer{
+        width: 100%;
+    }
+    .bubble{
+        padding: 8px;
+        font-size: 5px;
+    }
+    .certificate {
+        width: 52px;
+        height: 52px;
+        margin-left: 200px;
+    }
+    .certificate-logo{
+        width: 40px;
+        height: 40px;
+       
+    }
+    .certificateText{
+       display: none;
+    }
+}
+@media(max-width:550px){
+    .hero{
+        flex-direction: column;
+    }
+    .hTitle{
+        font-size: 30px;
+    }
+    .awards h2{
+        font-size: 10px;
+    }
+    .awards p{
+        font-size: 7px;
+    }
+    .hSection{
+        width: 100%;
+    }
+    .hSection.left{
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .hImg{
+        height: 100%;
+    }
+    .scroll,
+    .bubbleContainer,
+    .follow,
+    .certificate{
+        display: none;
+    }
+    
+    
+}
