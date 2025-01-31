@@ -29,11 +29,16 @@ a{
 }
 
 section{
-    height: 100vh;
+    height:100vh;
    scroll-snap-align: center;
    
 }
   
+@media (min-width: 340px){
+    .container{
+        max-width: 340px;
+    }
+}
 @media (min-width: 640px){
     .container{
         max-width: 640px;

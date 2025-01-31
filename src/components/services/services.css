@@ -9,3 +9,115 @@
     flex-direction: column;
     justify-content: center;
 }
+.sTitle{
+    font-size: 58px;
+    margin-bottom: 24px;
+}
+.serviceList{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.service{
+    width: 70%;
+    height: 100px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #2f213f;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.serviceIcon{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.serviceIcon img{
+    width: 25px;
+    height: 25px;
+}
+.service:nth-child(1) .serviceIcon{
+    background-color: #da0fc9;
+}
+.service:nth-child(2) .serviceIcon{
+    background-color: #070591;
+}
+.service:nth-child(3) .serviceIcon{
+    background-color: #07c0c0;
+}
+.serviceInfo h2{
+    font-size: 20px;
+}
+.serviceInfo h3{
+    font-size: 20px;
+    color: #979599;
+}
+.counterList{
+    width: 50%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.counterText{
+    color: #30cde9;
+    font-size: 25px;
+
+}
+.count{
+    color: #d40c7a;
+    font-size: 35px;
+}
+@media(max-width:720px)  {
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+    .sSection{
+        width: 100%;
+        height: 50%;
+    }
+    .sTitle{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .service{
+        width: 70%;
+        height: 40px;
+        padding: 27px;
+        border-radius: 20px;
+    
+    }
+    .serviceIcon{
+        height: 20px;
+        width: 20px;
+    }
+    .serviceIcon img{
+        height: 15px;
+        width: 15px;
+    }
+    .serviceInfo h2{
+        font-size: 15px;
+    }
+    .serviceInfo h3{
+        font-size: 8px;
+        
+    }
+
+    .counterText{
+      
+        font-size: 10px;
+    
+    }
+    .count{
+       
+        font-size: 15px;
+    }
+    
+}

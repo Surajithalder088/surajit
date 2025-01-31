@@ -1,7 +1,7 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useRef } from 'react'
 import "./hero.css"
 import Speech from './Speech'
-import { motion } from 'motion/react'
+import { motion, useInView } from 'motion/react'
 import { Canvas } from '@react-three/fiber'
 import Shape from './Shape'
 
@@ -15,7 +15,7 @@ const awardVariants={
     x:0,
     opacity:1,
     transition:{
-      duration:1.5,
+      duration:2,
       straggerChildren:0.2
     }
   }
@@ -30,26 +30,26 @@ const followVariants={
     y:0,
     opacity:1,
     transition:{
-      duration:1.5,
+      duration:2,
       straggerChildren:0.2
     }
   }
 }
 
 const Hero = () => {
+  const ref= useRef()
+  const isInView=useInView(ref,{margin:"-200px"})
   return (
-    <div className='hero'>
+    <div className='hero' ref={ref}>
       <div className="hSection left">
         {/*TITLE*/ }
         <motion.h1 
-        initial={{y:-100,opacity:0}} 
-        animate={{y:0,opacity:1}} 
-        transition={{duration:1.5}}
+       variants={followVariants}
+       animate={isInView?"animate":"initial"}
         className='hTitle'>Hey There,<br/><span>I'm Surajit</span></motion.h1>
         {/* ABOUTE ME*/}
         <motion.div variants={awardVariants}
-        initial='initial'
-        animate='animate'
+       animate={isInView?"animate":"initial"}
         className="awards">
           <motion.h2 variants={awardVariants}> Studying Software Engineering</motion.h2>
           <motion.p variants={awardVariants}>Bachelor of Technology in Information Technology under West Bengal University of Technology (MAKAUT)</motion.p>
@@ -64,7 +64,7 @@ const Hero = () => {
         <a href='scroll' className='scroll'>facebook</a>
       </div>
       <div className="hSection right">
-        <motion.div variants={followVariants} initial='initial' animate='animate' className="follow">
+        <motion.div variants={followVariants}animate={isInView?"animate":"initial"} className="follow">
           <motion.a variants={followVariants} href='/'>
           <img src='/facebook.png' />
           </motion.a>
