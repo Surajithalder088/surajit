@@ -61,7 +61,9 @@ const Hero = () => {
           </motion.div>
         </motion.div>
         {/* SOCIAL ICONS */}
-        <a href='scroll' className='scroll'>facebook</a>
+        <a href='/#services' className='scroll'>
+        <img src='/mouse.png' />
+        </a>
       </div>
       <div className="hSection right">
         <motion.div variants={followVariants}animate={isInView?"animate":"initial"} className="follow">

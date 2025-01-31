@@ -97,8 +97,21 @@
     border-radius: 100%;
 }
 .scroll{
+    display: flex;
+    padding: 10px;
     margin-bottom: 50px;
-    width: max-content;
+  
+    background-color: #ddd;
+    border-radius: 100%;
+    width: 50px;
+   height: 50px;
+
+}
+.scroll img{
+    
+    width: 40px;
+   
+   
 }
 
 .hSection.right{
@@ -292,7 +305,7 @@
     .hImg{
         height: 100%;
     }
-    .scroll,
+   .scroll,
     .bubbleContainer,
     .follow,
     .certificate{

@@ -30,7 +30,7 @@ const listvariants={
     opacity:1,
     transition:{
       duration:2,
-      straggerChildren:0.5
+      staggerChildren:0.5
     }
   }
 }
@@ -82,8 +82,10 @@ const Services = () => {
         variants={listvariants} 
         animate={isInView?"animate":"initial"}
         >
-          {services.map((service)=>(
+          {services.map((service)=>( 
+             <a   href='https://github.com/Surajithalder088'>
            <motion.div variants={listvariants} className="service" key={service.id}>
+          
             <div className="serviceIcon">
               <img src={service.img}/>
             </div>
@@ -91,7 +93,7 @@ const Services = () => {
               <h2>{service.title}</h2>
               <h3>{service.counter}</h3>
             </div>
-           </motion.div>
+           </motion.div></a>
           ))}
         </motion.div>
         <motion.div className="counterList"
@@ -101,6 +103,9 @@ const Services = () => {
         <div className="counterText">Project Completed</div>
         <div className="count">5</div>
         </motion.div>
+        <a href='/#portfolio' className='scroll'>
+        <img src='/mouse.png' />
+        </a>
       </div>
       <div className="sSection right">
        {/* */} <ComputerModelContainer/>

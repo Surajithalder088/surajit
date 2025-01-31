@@ -43,10 +43,10 @@
     height: 25px;
 }
 .service:nth-child(1) .serviceIcon{
-    background-color: #da0fc9;
+    background-color: #070591;
 }
 .service:nth-child(2) .serviceIcon{
-    background-color: #070591;
+    background-color: #a104af;
 }
 .service:nth-child(3) .serviceIcon{
     background-color: #07c0c0;
