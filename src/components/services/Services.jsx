@@ -103,9 +103,7 @@ const Services = () => {
         <div className="counterText">Project Completed</div>
         <div className="count">5</div>
         </motion.div>
-        <a href='/#portfolio' className='scroll'>
-        <img src='/mouse.png' />
-        </a>
+        
       </div>
       <div className="sSection right">
        {/* */} <ComputerModelContainer/>

@@ -1,10 +1,11 @@
 import React from 'react'
 import "./contact.css"
+import ComputerModelContainer from '../services/computer/ComputerModelContainer'
 
 const Contact = () => {
   return (
     <div className='contact'>
-      <div className="cSection left">
+      <div className="cSectionl">
         <form>
           <h1 className="cTitle">Contact with me:</h1>
           <div className="formItem">
@@ -25,7 +26,9 @@ const Contact = () => {
           <button className='formbtn'>Send</button>
         </form>
       </div>
-      <div className="cSection right">svg</div>
+      <div className="cSectionr">
+      <ComputerModelContainer/>
+      </div>
     </div>
   )
 }

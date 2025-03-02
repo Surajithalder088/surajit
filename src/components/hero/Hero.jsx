@@ -1,9 +1,10 @@
-import React, { Suspense, useRef } from 'react'
+import React, { Suspense, useRef, useState } from 'react'
 import "./hero.css"
 import Speech from './Speech'
 import { motion, useInView } from 'motion/react'
 import { Canvas } from '@react-three/fiber'
 import Shape from './Shape'
+
 
 
 const awardVariants={
@@ -37,6 +38,8 @@ const followVariants={
 }
 
 const Hero = () => {
+
+
   const ref= useRef()
   const isInView=useInView(ref,{margin:"-200px"})
   return (
@@ -61,20 +64,18 @@ const Hero = () => {
           </motion.div>
         </motion.div>
         {/* SOCIAL ICONS */}
-        <a href='/#services' className='scroll'>
-        <img src='/mouse.png' />
-        </a>
+        
       </div>
       <div className="hSection right">
         <motion.div variants={followVariants}animate={isInView?"animate":"initial"} className="follow">
-          <motion.a variants={followVariants} href='/'>
-          <img src='/facebook.png' />
+          <motion.a variants={followVariants} href='/https://www.linkedin.com/in/surajit-halder-77298b22b'>
+          <img src='/linkedin-2025.jpg' />
+          </motion.a>
+          <motion.a variants={followVariants} href='/https://www.github.com/Surajithalder088'>
+          <img src='/github-2025.jpg' />
           </motion.a>
           <motion.a variants={followVariants} href='/'>
-          <img src='/instagram.png' />
-          </motion.a>
-          <motion.a variants={followVariants} href='/'>
-          <img src='/youtube.png' />
+          <img src='/facebook-2025.jpg' />
           </motion.a>
            <motion.div variants={followVariants} className="followTextContainer">
             <motion.div className="followText">FOLLOW ME</motion.div>

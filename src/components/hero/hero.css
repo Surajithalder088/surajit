@@ -88,6 +88,7 @@
 .awardList{
     display: flex;
     gap: 8px;
+    margin: 10px;
 }
 .awardList img{
     width: 30px;
@@ -122,12 +123,12 @@
     flex-direction: column;
     gap: 10px;
     padding: 15px;
-    background-color: #2f204e;
+    background-color: #000000;
     border-bottom-right-radius:25px ;
 }
 .follow img{
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
 }
 .followTextContainer{
     width: 20px;
