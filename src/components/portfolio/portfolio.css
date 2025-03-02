@@ -10,6 +10,17 @@
     height: 100vh;
     width: max-content;
 }
+.scroll{
+    background: #000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:fantasy;
+}
+.scroll:hover{
+    cursor: not-allowed;
+}
 .pItem{
     height: 100%;
     width: 100vw;

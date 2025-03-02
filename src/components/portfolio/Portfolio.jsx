@@ -131,7 +131,13 @@ const Portfolio = () => {
             style={{pathLength:scrollYProgress}}
             transform="rotate(-90 80 80)"
             />
-        </svg>scroll
+        </svg>
+        <motion.div className="scroll" variants={imagevariant}
+        initial={'initial'}
+      animate={ 'animate'}
+      >
+        Scroll
+      </motion.div>
       </div>
       </div>
   )

@@ -33,6 +33,8 @@
 .degree{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 500px;
     
 }
@@ -42,20 +44,23 @@
     display: flex;
     justify-content:center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     
 }
 .certificate-logo{
     margin: 5px;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 .certificateText{
-    font-size: 12px;
-   margin: 16px 0;
+    font-size: 10px;
+  margin-right: 15px;
     text-align: center;
     width: 60%;
+    
+    font-family: cursive;
+    font-weight: 600;
 }
 .hSection{
     width: 50%;
@@ -79,11 +84,13 @@
 }
 .awards h2{
     font-size:20px ;
+
 }
 .awards p{
-    font-size: 14px;
+    font-size: 16px;
     color: #ddd;
     margin: 16px 0;
+    font-weight: 500;
 }
 .awardList{
     display: flex;
@@ -174,6 +181,8 @@
     align-items: center;
     justify-content: center;
 }
+
+
 .contactButton{
     display: flex;
     flex-direction: row;

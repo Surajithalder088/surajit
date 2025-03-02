@@ -30,7 +30,7 @@ const App = () => {
               contacts
        </button>
        <button className='button' onClick={()=>setOpen(false)}>
-              +
+              -
        </button>
           </div>):(<button className='button' onClick={()=>setOpen(true)}>
       
